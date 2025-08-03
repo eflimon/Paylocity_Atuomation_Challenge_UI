@@ -8,8 +8,7 @@ namespace AutomationChallengeUI
 {
     public class Tests
     {
-
-        IWebDriver driver;
+        private IWebDriver driver;
         LoginPage loginPage;
         PaylocityBenefitsDashboardPage dashboard;
         EmployeeModal em;
@@ -17,6 +16,8 @@ namespace AutomationChallengeUI
         string lastName = "Perez test";
         string firstNameUpdt= "Luis Update";
         string lastNameUpdt = "Garcia Update";
+        string username = "TestUser772";
+        string password = "m%rL].0_b>N/";
 
 
         [SetUp]
@@ -41,7 +42,7 @@ namespace AutomationChallengeUI
         {
 
             //Login performed
-            loginPage.Login("TestUser772", "m%rL].0_b>N/");
+            loginPage.Login(username, password);
             //Assertion
             var loginSuccess = loginPage.LoginSucceessfull();
             Assert.That(loginSuccess, Is.True);
@@ -53,7 +54,7 @@ namespace AutomationChallengeUI
         public void LoginWrongPassword()
         {
             //Login performed
-            loginPage.Login("TestUser772", "m%rL].0_b");
+            loginPage.Login(username, "m%rL].0_b");
 
             //Assertion
             var errorMessage = loginPage.GetErrorMessage();
@@ -67,7 +68,7 @@ namespace AutomationChallengeUI
         {
 
             //Login performed
-            loginPage.Login("TestUser772", "");
+            loginPage.Login(username, "");
 
             //Assertion
             var errorMessage = loginPage.GetErrorMessage();
@@ -95,7 +96,7 @@ namespace AutomationChallengeUI
         {
 
             //Login performed
-            loginPage.Login("TestUser772", "m%rL].0_b>N/");           
+            loginPage.Login(username, password);           
 
             //Add employee
             dashboard.ClickAddEmployee();
@@ -113,7 +114,7 @@ namespace AutomationChallengeUI
             int finalRows;
 
             //Login performed
-            loginPage.Login("TestUser772", "m%rL].0_b>N/");
+            loginPage.Login(username, password);
 
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             //WebDriverWait wait2 = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
@@ -137,7 +138,7 @@ namespace AutomationChallengeUI
         public void EditEmployeeSuccessfully()
         {
             //Login performed
-            loginPage.Login("TestUser772", "m%rL].0_b>N/");
+            loginPage.Login(username, password);
 
             dashboard.ClickUpdateEmployee();
             em.UpdateEmployee(firstNameUpdt, lastNameUpdt, 5);
