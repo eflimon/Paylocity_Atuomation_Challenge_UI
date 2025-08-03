@@ -4,7 +4,7 @@ This is a Paylocity automation challenge solution implemented with C# and seleni
 
 ## Requirements
 
-- Viusal Studio 2022 (Community)
+- Visual Studio 2022 (Community)
     Download link: https://visualstudio.microsoft.com/downloads/
 
 ## Setting up
@@ -50,11 +50,11 @@ Install Visual studio 2022 (Community)
 
 
 - Tests will be executed and results will be shown.
-- Tests can be run indivually if you haver over the test case -> right click -> Run
+- Tests can be run induvial if you hover over the test case -> right click -> Run
 
 - <img width="592" height="542" alt="image" src="https://github.com/user-attachments/assets/2f8de9e8-61af-4924-a9d8-46b5498639a0" />
 
-- Test case rsults will be shown in Test explorer.
+- Test case results will be shown in Test explorer.
 
 
 
