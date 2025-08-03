@@ -32,6 +32,12 @@ Install Visual studio 2022 (Community)
 
 <img width="1884" height="968" alt="image" src="https://github.com/user-attachments/assets/05193ac4-4a26-4012-996c-dff4ebfc2759" />
 
+- In Solution explorer open TestCases.cs
+
+- in lines 19 and 20 you can setup your username and password
+
+<img width="1354" height="639" alt="image" src="https://github.com/user-attachments/assets/286ba763-6823-402d-9763-fc0207c9afe4" />
+
 
 - Open test explorer if is not opened
 
