@@ -21,3 +21,10 @@ In Workloads Window select:
   Click install.
 
 ## Run Solution
+
+- Open Visual Studio 2022
+- Click clone Repository
+
+<img width="1868" height="642" alt="image" src="https://github.com/user-attachments/assets/d5dd47a0-31e4-4c7d-b9e3-0ec1a71eb848" />
+
+
